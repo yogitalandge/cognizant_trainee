@@ -1,0 +1,29 @@
+<div>
+    <h3>Add media data</h3>
+    <form #frm="ngForm" ngForm (ngSubmit)="saveMedia(frm.value)">
+    <div class="row">
+      <div class="col"><label for="">Enter title</label></div>
+      <div class="col"><input type="text" name="mytitle" ngModel /></div>
+    </div>
+    <div class="row">
+      <div class="col"><label for="">Enter Description</label></div>
+      <div class="col"><input type="text" name="mydescription" ngModel /></div>
+    </div><div class="row">
+      <div class="col"><label for="">Tag people</label></div>
+      <div class="col"><input type="text "name="mytag" ngModel /></div>
+    </div>
+    <div class="row">
+      
+      <div class="col"><input type="submit" value="Save" /></div>
+    </div>
+  
+    <!-- Show the list : replaced the code with a tag-->
+    <!-- pass the data : media ==> mediaList -->
+   <!-- <app-media-list [mediaList]="media"></app-media-list>-->
+</form > 
+
+<h2>Title:{{title}}</h2>
+<h2>Description:{{description}}</h2>
+<h2>Tag:{{tag}}</h2>
+</div>
+

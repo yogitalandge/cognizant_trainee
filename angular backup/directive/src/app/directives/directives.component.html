@@ -1,0 +1,18 @@
+<div><h2>NAME : {{name}}</h2></div>
+<div><h2>AGE : {{age}}</h2></div>
+<div><h2>EMAIL : {{email}}</h2></div>
+
+
+<div *ngIf="isEligible()"><h3>eligible to vote</h3></div>
+
+
+<div [ngSwitch]="switch_expression">
+
+<div ngSwitchCase="match_expression_1">..</div>
+<div ngSwitchCase="match_expression_2">..</div>
+<div ngSwitChcase="match_expression_3">..</div>
+
+<div *ngSwitchDefault>..</div>
+</div>
+
+<input type="button" value="change" click="changeval()"/>
