@@ -1,0 +1,23 @@
+<div>
+    <h3>Add media data</h3>
+    <div class="row">
+      <div class="col"><label for="">Enter title</label></div>
+      <div class="col"><input type="text" #txtTitle /></div>
+    </div>
+    <div class="row">
+      <div class="col"><label for="">Enter Description</label></div>
+      <div class="col"><input type="text" #txtDescription /></div>
+    </div><div class="row">
+      <div class="col"><label for="">Tag people</label></div>
+      <div class="col"><input type="text" #txtTag /></div>
+    </div>
+    <div class="row">
+      
+      <div class="col"><input type="button" value="Save" (click)="saveMedia(txtTitle, txtDescription, txtTag)" /></div>
+    </div>
+  
+    <!-- Show the list : replaced the code with a tag-->
+    <!-- pass the data : media ==> mediaList -->
+   <!-- <app-media-list [mediaList]="media"></app-media-list>-->
+  </div>
+

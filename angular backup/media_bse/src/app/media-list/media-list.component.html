@@ -1,0 +1,19 @@
+
+<div>
+    <table class="table">
+      <thead>
+       
+        <th>TITLE</th>
+        <th>DESCRIPTION</th>
+        <th>TAG</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let media of mediaList; let i = index">
+          <td>{{i+1}}</td>
+          <td>{{media.title}}</td>
+          <td>{{media.description}}</td>
+          <td>{{media.tag}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

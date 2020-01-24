@@ -1,0 +1,13 @@
+<div>
+    <!-- To take input -->
+    <!-- handle the submit_info event of product-entry component 
+        Data that comes with event is passed to function : with variable name ($event)
+        $event : object of type Product
+    -->
+    <app-media-base-new (submit_info) = "addNewMedia($event)"></app-media-base-new>
+  
+  <hr/>
+    <!-- Show the list : replaced the code with a tag-->
+    <!-- pass the data : products ==> productsList -->
+    <app-media-list [mediaList]="media" > </app-media-list>
+  </div>
