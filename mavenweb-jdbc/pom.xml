@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   
   <groupId>com.cts.training</groupId>
-  <artifactId>mavenweb2</artifactId>
+  <artifactId>mavenweb-jdbc</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
   <name>mavenweb Maven Webapp</name>
@@ -26,14 +26,6 @@
 	    <artifactId>spring-webmvc</artifactId>
 	    <version>5.2.3.RELEASE</version>
 	</dependency>
-	<!-- hibernate validator -->
-	<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-validator -->
-<dependency>
-    <groupId>org.hibernate</groupId>
-    <artifactId>hibernate-validator</artifactId>
-    <version>6.1.2.Final</version>
-</dependency>
-	
 
 	<!--  support for Servlet (Dispatcher servlet) -->  
   	<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
@@ -50,35 +42,51 @@
 	    <groupId>javax.servlet.jsp</groupId>
 	    <artifactId>javax.servlet.jsp-api</artifactId>
 	    <version>2.3.3</version>
-	    
 	</dependency>
-	<!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
-<dependency>
-    <groupId>javax.servlet</groupId>
-    <artifactId>jstl</artifactId>
-    <version>1.2</version>
-</dependency>
 	
-    <!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
-<dependency>
-    <groupId>org.springframework</groupId>
-    <artifactId>spring-jdbc</artifactId>
-    <version>5.2.3.RELEASE</version>
-</dependency>
-<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
-<dependency>
-    <groupId>org.projectlombok</groupId>
-    <artifactId>lombok</artifactId>
-    <version>1.18.12</version>
-    <scope>provided</scope>
-</dependency>
+	<!-- JSTL exclusive -->
+	<!-- https://mvnrepository.com/artifact/jstl/jstl -->
+	<dependency>
+	    <groupId>jstl</groupId>
+	    <artifactId>jstl</artifactId>
+	    <version>1.2</version>
+	</dependency>
 
+	
+	<!-- Hibernate Validation API -->
+	<!-- https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator -->
+	<dependency>
+	    <groupId>org.hibernate.validator</groupId>
+	    <artifactId>hibernate-validator</artifactId>
+	    <version>6.1.2.Final</version>
+	</dependency>
+	
+	
+    
+    <!-- Dependency for Jdbc Template -->
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-jdbc</artifactId>
+	    <version>5.2.3.RELEASE</version>
+	</dependency>
+	    
+	<!-- Java MySql Connector -->    
     <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
-<dependency>
-    <groupId>mysql</groupId>
-    <artifactId>mysql-connector-java</artifactId>
-    <version>8.0.19</version>
-</dependency>
+	<dependency>
+	    <groupId>mysql</groupId>
+	    <artifactId>mysql-connector-java</artifactId>
+	    <version>8.0.19</version>
+	</dependency>
+    
+    <!--  Lombok Dependency -->
+    <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+	<dependency>
+	    <groupId>org.projectlombok</groupId>
+	    <artifactId>lombok</artifactId>
+	    <version>1.18.12</version>
+	    <scope>provided</scope>
+	</dependency>
     
     
     <!-- Dependency of unit testing -->
@@ -92,7 +100,7 @@
   </dependencies>
   
   <build>
-    <finalName>mavenweb2</finalName>
+    <finalName>mavenweb-jdbc</finalName>
     
     <pluginManagement>
     	<plugins>

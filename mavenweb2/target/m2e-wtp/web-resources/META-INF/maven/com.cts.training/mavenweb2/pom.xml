@@ -26,6 +26,14 @@
 	    <artifactId>spring-webmvc</artifactId>
 	    <version>5.2.3.RELEASE</version>
 	</dependency>
+	<!-- hibernate validator -->
+	<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-validator -->
+<dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-validator</artifactId>
+    <version>6.1.2.Final</version>
+</dependency>
+	
 
 	<!--  support for Servlet (Dispatcher servlet) -->  
   	<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
